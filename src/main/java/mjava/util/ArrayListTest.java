@@ -37,7 +37,7 @@ public class ArrayListTest {
         //get set add remove clear 增删改查
         //addAll
         // removeAll  A-B
-        // retainAll  A∩B
+        // A.retainAll(B)  A∩B  对于A的每一个元素，到B中查看是否contain，否的话remove
         System.out.println();
 
 
