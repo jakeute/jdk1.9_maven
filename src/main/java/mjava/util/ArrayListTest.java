@@ -37,7 +37,7 @@ public class ArrayListTest {
         //get set add remove clear 增删改查
         //addAll
         // removeAll  A-B
-        // retainAll  AUB
+        // retainAll  A∩B
         System.out.println();
 
 
