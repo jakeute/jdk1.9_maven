@@ -11,8 +11,9 @@ package mjava.problem;
  * List:CopyOnWriteArrayList
  * Map:ConcurrentHashMap ConcurrentSkipListMap
  * Set:CopyOnWriteArraySet ConcurrentSkipListSet
- *  单端阻塞队列：ArrayBlockingQueue、LinkedBlockingQueue、PriorityBlockingQueue
- *  单端非阻塞队列：其实现类是 ConcurrentLinkedQueue
+ *
+ * 单端阻塞队列：ArrayBlockingQueue、LinkedBlockingQueue、PriorityBlockingQueue
+ * 单端非阻塞队列：其实现类是 ConcurrentLinkedQueue
  */
 public class ContainerProblem {
 }
