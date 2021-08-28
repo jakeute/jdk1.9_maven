@@ -8,6 +8,7 @@ import java.util.LinkedList;
  * LinkedList 实现了 Queue 接口，可作为队列使用。
  * LinkedList 实现了 Deque 接口，可作为双端队列使用。
  * toString 被设置成输出其内部数据
+ * get(index)  类似折半查找
  */
 public class LinkedListTest {
     /**
@@ -18,8 +19,10 @@ public class LinkedListTest {
      * remove addAll  get set indexof lastindexof
      * clone toArray
      *
+     * strings1.descendingIterator() 倒叙访问
      * @param args
      */
+
     public static void main(String[] args) {
         LinkedList<String> queue = new LinkedList<>();
         queue.add("1");

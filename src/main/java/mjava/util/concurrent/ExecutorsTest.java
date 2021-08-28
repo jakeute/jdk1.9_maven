@@ -2,6 +2,7 @@ package mjava.util.concurrent;
 
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -10,7 +11,6 @@ import java.util.concurrent.Executors;
  */
 public class ExecutorsTest {
     public static void main(String[] args) {
-
     }
 
     @Test
@@ -28,7 +28,7 @@ public class ExecutorsTest {
     @Test
     public void test2() {
         ExecutorService executorService = Executors.newCachedThreadPool();
-        executorService.execute(()->{
+        executorService.execute(() -> {
             System.out.println("hello");
         });
 //       new ThreadPoolExecutor(0, Integer.MAX_VALUE,
@@ -50,15 +50,37 @@ public class ExecutorsTest {
 
     @Test
     public void test4() {
-//        Executors.newScheduledThreadPool()
-        //就是创造一个ScheduledThreadPool
+        int[] array = new int[]{5,4,3,2,4,5,2,3,1,10};
+        sort(array,0, array.length-1);
+        System.out.println(Arrays.toString(array));
     }
 
-    @Test
-    public void test5() {
-//        Executors.newSingleThreadScheduledExecutor();
-        //单个线程的ScheduledThreadPool
+    void sort(int[] arrrays,int left,int right){
+        if(left>=right)
+            return;
+        int i= left,j=right;
+        int num=arrrays[left];
+
+        while (i!=j){
+            while (i<j-1 && arrrays[i]<=num){
+                i++;
+            }
+            while (j>i +1 && arrrays[j]>=num){
+                j--;
+            }
+            if(i<j){
+                swap(arrrays,i,j);
+            }
+        }
+
+
+        sort(arrrays,left,i-1);
+        sort(arrrays,i+1,right);
     }
 
-
+    void swap(int[]arrays,int i,int j){
+        int u= arrays[i];
+        arrays[i]=arrays[j];
+        arrays[j]=u;
+    }
 }

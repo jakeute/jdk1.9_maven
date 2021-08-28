@@ -57,4 +57,9 @@ public class RoutingProblem {
         out.write("lllllllllwwww".getBytes());
         out.close();
     }
+
+    @Test
+    public void test3() throws IOException {
+        System.out.println(RoutingProblem.class.getClassLoader());
+    }
 }

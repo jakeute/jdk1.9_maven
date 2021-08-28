@@ -24,7 +24,8 @@ import java.util.concurrent.FutureTask;
  * public boolean cancel（boolean mayInterrupt）：用于停止任务。如果尚未启动，它将停止任务。如果已启动，则仅在mayInterrupt为true时才会中断任务。
  * public Object get（）抛出InterruptedException，ExecutionException：用于获取任务的结果。如果任务完成，它将立即返回结果，否则将阻塞等待任务完成，然后返回结果。
  * public boolean isDone（）：如果任务完成，则返回true，否则返回false
- * public void run() 执行Callable 但是执行任务的只能有一个线程，其他的线程会直接返回.当执行完成后会唤醒因调用get而阻塞的线程
+ * public void run() 执行Callable 但是执行任务的只能有一个线程，且只能执行一次，其他的线程会直接返回.当执行完成后会唤醒因调用get而阻塞的线程
+ * 因为结果只能有一份
  * 总体来说在内部 Callable代替 Runnable 实现逻辑代码，而FutureTask包装Runnable 适应Thread，Future接口去获取结果
  * 而且Callable能抛出异常，而Runnable只能将异常转化为运行时异常抛出，虽说结果都是一样的
  * 但是runnable能被多个线程执行，callable只能被一个线程去执行，其他的线程直接去获取结果就可

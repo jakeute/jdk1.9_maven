@@ -50,6 +50,7 @@ import java.math.MathContext;
  * 将BigDecimal对象中的值转换成双精度数
  * <p>
  * floatValue()
+ * 
  * <p>
  * 将BigDecimal对象中的值转换成单精度数
  * <p>

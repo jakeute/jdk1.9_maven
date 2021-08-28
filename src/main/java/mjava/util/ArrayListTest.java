@@ -41,6 +41,7 @@ public class ArrayListTest {
         System.out.println();
 
 
+
         //迭代器 hasNext->当前位置下是否有数据
         // next->输出当前的位置下的数据 并且向后位移
         // remove -> 删除next上次的位置

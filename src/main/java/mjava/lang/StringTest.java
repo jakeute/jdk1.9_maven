@@ -122,7 +122,7 @@ public class StringTest {
     @Test
     public void test1(){
         String p="12;3a;bc";
-        System.out.println(Arrays.toString(p.split("\\W+")));
+        System.out.println(Arrays.toString(p.split("\\d+")));
     }
 
 }

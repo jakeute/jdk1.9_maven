@@ -2,6 +2,7 @@ package mjava.util.concurrent.locks;
 
 /**
  * AQS的全称是AbstractQueuedSynchronizer，它的定位是为Java中几乎所有的锁和同步器提供一个基础框架。
+ * AQS使用LockSupport将线程处于等待状态模拟阻塞
  * <p>
  * AQS是基于FIFO的队列实现的，并且内部维护了一个状态变量state，通过原子更新这个状态变量state即可以实现加锁解锁操作。
  * <p>

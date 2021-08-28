@@ -8,9 +8,8 @@ package mjava.lang;
  * Thread.sleep(不释放锁休眠)/join(等待线程结束)/interrupt(中断线程)/yield(谦让CPU)
  * <p>
  * NEW           新建状态，线程还未开始
- * RUNNABLE      可运行状态，正在运行或者在等待系统资源，比如CPU
+ * RUNNABLE      可运行状态，正在运行或者在等待系统资源，比如CPU时间片
  * BLOCKED       阻塞状态，在等待一个监视器锁（也就是我们常说的synchronized）
- * 或者在调用了Object.wait()方法且被notify()之后也会进入BLOCKED状态
  * WAITING      等待状态，在调用了以下方法后进入此状态
  * 1. Object.wait()无超时的方法后且未被notify()前，如果被notify()了会进入BLOCKED状态
  * 2. Thread.join()无超时的方法后

@@ -9,7 +9,7 @@ import org.junit.Test;
  * 于是StringBuffer适用于在字符串上进行插入删除的等更改字符串的操作
  * String适用于对字符串进行分析处理的操作
  */
-public class StringBufferTest {
+public class  StringBufferTest {
     @Test
     public void analyse() {
         //public StringBuffer()
