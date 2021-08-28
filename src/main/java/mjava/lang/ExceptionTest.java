@@ -1,6 +1,7 @@
 package mjava.lang;
 
 /**
+<<<<<<< HEAD
  *
  *
  * Throwable

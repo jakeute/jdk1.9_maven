@@ -19,6 +19,7 @@ public class LinkedListTest {
      * remove addAll  get set indexof lastindexof
      * clone toArray
      *
+<<<<<<< HEAD
      * strings1.descendingIterator() 倒叙访问
      * @param args
      */
