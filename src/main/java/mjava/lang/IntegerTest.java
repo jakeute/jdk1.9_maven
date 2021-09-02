@@ -54,6 +54,7 @@ public class IntegerTest {
 
 
         //在Integer内部已经将-128————127的Integer对象并且存储
+        //只适用于自动拆装箱
         Integer c = 4;
         Integer d = 4;
         System.out.println(c == d);
